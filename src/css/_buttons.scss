@@ -65,7 +65,8 @@
 
     &:hover,
     &:focus {
-      background-color: scale-color(tdbc-color("primary"), $lightness: 80%);
+      background-color: scale-color(tdbc-color("primary"), $alpha: -30%);
+      color: scale-color(tdbc-color("primary"), $lightness: 90%)
     }
   }
 
