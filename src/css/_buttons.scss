@@ -19,11 +19,15 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 
   @media screen and (-ms-high-contrast: active) {
     border: 2px solid currentColor;
   }
-
+  &:hover{
+    background-color: #fff;
+    color: tdbc-color("primary");
+  }
   &:focus {
     outline-color: transparent;
     outline-style: solid;

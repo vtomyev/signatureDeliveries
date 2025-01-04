@@ -27,19 +27,19 @@ templateEngineOverride: md, njk
     font-size: 1.5rem;
   }
 </style>
-<header class="tdbc-hero tdbc-background--gray tdbc-ink--light" style="background-image: url('https://wieck-mbusa-production.s3.amazonaws.com/photos/5eeb73ea9484c9d9b13a1473cba751b5cf07049a/preview-928x522.jpg'); background-repeat: no-repeat; background-size:cover; background-position: center;">
+<header class="tdbc-hero tdbc-background--gray tdbc-ink--light hero-image">
   <h1>Signature Deliveries</h1>
-  <button class="tdbc-button tdbc-button-outlined tdbc-button--primary">Get a FREE Quote</button>
+  <button class="tdbc-button tdbc-ink--light tdbc-button--primary">Get a FREE Quote</button>
 </header>
 
 <main class="tdbc-container">
   <div class="tdbc-section">
     <ul class="tdbc-column-container">
       {%- for page in collections.pages -%}
-      <li class="tdbc-card">
+      <li class="tdbc-card tdbc-background--secondary tdbc-ink--light">
          <img src="{{ page.data.image}}" alt="pupper" />
         <div class="tdbc-card__content">
-          <a href="{{ page.url }}" class="tdbc-card__title">{{ page.data.title }}</a>
+          <a href="{{ page.url }}" class="tdbc-card__title tdbc-ink--light">{{ page.data.title }}</a>
           <p>{{ page.data.description }}</p>
         </div>
       </li>
