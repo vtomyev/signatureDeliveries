@@ -41,4 +41,12 @@
     outline-style: solid;
     box-shadow: 0 0 1px 2px tdbc-color("light");
   }
+  .tdbc-button{
+    color: tdbc-color("light");
+    background-color: transparent;
+    &:hover{
+      background-color: tdbc-color("light");
+      color: tdbc-color("primary");
+    }
+  }
 }
