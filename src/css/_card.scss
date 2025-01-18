@@ -9,6 +9,10 @@
   background-color: #fff;
   box-shadow: 0 3px 5px rgb(0 0 0 / 18%);
 
+  &:hover{
+    background-color: tdbc-color("primary");
+  }
+
   &__title {
     margin-bottom: 1rem;
     font-size: $tdbc-h4-font-size;

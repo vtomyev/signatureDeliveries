@@ -1,0 +1,34 @@
+@use "theme" as *;
+
+form {
+    margin-top: 16px;
+    padding: 1em;
+    border-radius: $tdbc-border-radius;
+    input, select, textarea{
+        box-sizing: border-box;
+        padding:0;
+        margin-top:4px;
+        margin-bottom: 4px;
+        border: 2px solid tdbc-color('dark');
+        border-radius: 2px;
+        outline:none;
+        transition: 0.5s;
+        background-color: tdbc-color('light');
+        color: tdbc-color('dark');
+        &:focus{
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid tdbc-color('light');
+        }
+    }
+    .tdbc-button{
+        box-sizing:border-box;
+    }
+    p{
+        display:flex;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+

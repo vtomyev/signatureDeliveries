@@ -12,21 +12,25 @@
   transition: 180ms ease-in-out;
   transition-property: background, border;
   border-radius: math.div($tdbc-border-radius, 2);
-  background-color: tdbc-color("primary");
-  color: #fff;
+  background-color: tdbc-color("accent");
+  color: tdbc-color("light");
   font-size: 1.125rem;
   line-height: 1.1;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border: none;
+  box-sizing: border-box;
+  transition: 0.2s;
 
   @media screen and (-ms-high-contrast: active) {
     border: 2px solid currentColor;
   }
   &:hover{
-    background-color: #fff;
-    color: tdbc-color("primary");
+    background-color: tdbc-color("light");
+    color: tdbc-color("accent");
+    outline-style: solid;
+    
   }
   &:focus {
     outline-color: transparent;

@@ -1,3 +1,5 @@
+@use "theme" as *;
+
 .logo {
     width: 12vmax;
     height: 12vmax;
@@ -17,4 +19,10 @@
   #quickstart + ol li:first-child,
   #quickstart + ol li:first-child p {
     font-size: 1.5rem;
+  }
+
+  .hero-cta{
+    border-radius: $tdbc-border-radius;
+    background-color: transparentize(tdbc-color("secondary"), 0.4) ;
+    padding: 1rem;
   }

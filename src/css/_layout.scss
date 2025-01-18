@@ -38,6 +38,25 @@ article {
   padding: 1rem;
 }
 
+input, select, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: $layout-breakpoint-small){
+  .grid{
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.grid{
+  display:grid;
+  
+  grid-gap: 2em;
+}
+
 .tdbc-column-container {
   display: grid;
   grid-gap: 2em;
@@ -70,7 +89,7 @@ ul.tdbc-column-container {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wieck-mbusa-production.s3.amazonaws.com/photos/5eeb73ea9484c9d9b13a1473cba751b5cf07049a/preview-928x522.jpg");
+  background-image: url("https://wieck-mbusa-production.s3.amazonaws.com/photos/5eeb73ea9484c9d9b13a1473cba751b5cf07049a/preview-928x522.jpg");
   /* background-image: linear-gradient($tdbc-color-primary, $tdbc-color-secondary); */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
