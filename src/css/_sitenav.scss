@@ -2,8 +2,11 @@
 @use "theme" as *;
 
 #tdbc-siteid {
-  font-size: $tdbc-h3-font-size;
   text-decoration: none;
+  h3{
+    font-size: $tdbc-h3-font-size;
+    text-transform: uppercase;
+  }
 }
 
 .tdbc-sitenav {
