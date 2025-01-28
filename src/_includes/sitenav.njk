@@ -16,9 +16,10 @@
           {% if currentUrl === link.url %}aria-current="page"{% endif %}
           class="tdbc-button"
           href="{{ link.url }}">
-            {{ link.data.title }}
+            {{ link.data.buttonText }}
         </a>
       </li>
+      {% if link.data.phoneNumber %} <li><a href="tel:{{link.data.phoneNumber}}">{{link.data.phoneNumber}}</a></li> {% endif %}
       {%- endfor %}
     </ul>
 </nav>

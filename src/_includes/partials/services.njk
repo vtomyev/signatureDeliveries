@@ -1,0 +1,33 @@
+<div class="card">
+    <div>
+        <img src="{{ ServiceHeroImage }}" alt="{{ ServiceHeroImageAlt }}"></div>
+        <div class="card-text-content">
+            <div class="grid">
+                <div>
+                    <h3>{{ services.industries.name }}</h3>
+                    <ul>
+                        {% for vehicle in services.industries.industryList %}
+                            <li>{{ vehicle }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+                    <h3>{{ services.services.name }}</h3>
+                    <ul>
+                        {% for service in services.services.serviceList %}
+                            <li>{{ service }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+                    <h3>{{ services.vehicles.name }}</h3>
+                    <ul>
+                        {% for vehicle in services.vehicles.vehicleList %}
+                            <li>{{ vehicle }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>

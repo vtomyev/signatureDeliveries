@@ -1,19 +1,23 @@
 ---
 layout: base.njk
 templateEngineOverride: md, njk
+ServiceHeroImage: "img/services/ServiceSectionHero.png"
+ServiceHeroImageAlt: "Truck, van and small car lineup"
+
 ---
 
 <header class="tdbc-hero tdbc-ink--dark hero-image">
   <div>
     <h1 class="hero-cta">Signature Deliveries</h1>
   </div>
-  <button class="tdbc-button tdbc-button--center tdbc-ink--light tdbc-button--primary">Get a FREE Quote</button>
+  <a href="#contact" class="tdbc-button tdbc-button--center tdbc-ink--light tdbc-button--primary">Get a FREE Quote</a>
 </header>
 <main class="tdbc-container">
   <div class="tdbc-section">
     <div class="grid">
       <div>
-        <ul class="tdbc-column-container">
+        {% include "partials/services.njk" %}
+       {#  <ul class="tdbc-column-container">
           {%- for page in collections.pages -%}
             <a href="{{ page.url }}" class="tdbc-card__title">
               <li class="tdbc-card tdbc-background--secondary tdbc-ink--dark">
@@ -29,7 +33,7 @@ templateEngineOverride: md, njk
               </li>
             </a>
           {%- endfor -%}
-        </ul>
+        </ul> #}
       </div>
       <div>
         {% include "partials/contact.njk" %}

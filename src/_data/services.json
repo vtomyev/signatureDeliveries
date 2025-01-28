@@ -1,0 +1,35 @@
+{
+    "services":{
+        "serviceList":[
+            "Routes",
+            "Hot shot",
+            "Expedited",
+            "White glove service",
+            "Lift-gate",
+            "Final mile deliveries",
+            "Two man deliveries"
+          ],
+        "name": "Our Services"
+    },
+
+    "vehicles":{
+        "vehicleList":[
+            "Car",
+            "Sprinter",
+            "Box truck"
+          ],
+        "name": "Our fleet"
+    },
+
+    "industries":{
+      "industryList":[
+        "Medical",
+        "Construction",
+        "Aviation",
+        "Manufacturing",
+        "Mining"
+      ],
+      "name": "Industries we serve"
+    }
+}
+

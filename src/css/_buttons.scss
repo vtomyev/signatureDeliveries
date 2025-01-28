@@ -29,7 +29,7 @@
   &:hover{
     background-color: tdbc-color("light");
     color: tdbc-color("accent");
-    outline-style: solid;
+    outline: solid tdbc-color("accent");
     
   }
   &:focus {

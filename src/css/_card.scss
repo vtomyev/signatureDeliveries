@@ -85,3 +85,38 @@
     box-shadow: none;
   }
 }
+
+.card {
+  border-radius: 0.3rem;
+  color: tdbc-color("dark");
+
+  .card-text-content {
+    font-weight: 500;
+    margin-top: 2rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    @media (min-width: $layout-breakpoint-small){
+      .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+    div div{
+      padding: 1rem 0 1rem 0;
+      background:tdbc-color("secondary");
+      border-radius: 0.3rem;
+      justify-content: center;
+    }
+    h3{
+      font-size: 1.3em;
+      text-align: center;
+      
+    }
+    li{
+      list-style-type: disc;
+      &::marker{
+        
+        content: ">  ";
+      }
+    }
+  }
+
+}
