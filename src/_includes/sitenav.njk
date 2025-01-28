@@ -19,7 +19,7 @@
             {{ link.data.buttonText }}
         </a>
       </li>
-      {% if link.data.phoneNumber %} <li><a href="tel:{{link.data.phoneNumber}}">{{link.data.phoneNumber}}</a></li> {% endif %}
+      {% if link.data.phoneNumber %} <li><a class="tdbc-button" id="phoneNumber"href="tel:{{link.data.phoneNumber}}">{{link.data.phoneNumber}}</a></li> {% endif %}
       {%- endfor %}
     </ul>
 </nav>
