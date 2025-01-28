@@ -62,3 +62,11 @@
     font-weight: 600;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .tdbc-sitenav__container a:not(:first-child) {display: none;}
+  .tdbc-sitenav__container a.icon {
+    float: right;
+    display: block;
+  }
+}
