@@ -5,6 +5,6 @@ module.exports = {
   siteDescription:
     "When time is critical...",
   authorName: "",
-  logo: "/img/SignatureDeliveriesLogo.png",
+  logo: "/assets/img/SignatureDeliveriesLogo.png",
   twitterUsername: "", // no `@`
 };
