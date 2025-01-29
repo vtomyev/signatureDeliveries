@@ -5,10 +5,28 @@
     <a id="tdbc-siteid" href="/"
     {% if currentUrl === '/' %}aria-current="page"{% endif %}
     >
-      <h3>{{ meta.siteName }}</h3>
-      <i>{{ meta.slogan }}</i>
+      <div class="grid">
+        <div><img src="{{meta.logo}}" alt="Signature Deliveries Logo"></div>
+        <div class="sitename">
+          <h3>{{ meta.siteName }}</h3>
+          <i>{{ meta.slogan }}</i>
+        </div>
+      </div>
     </a>
-    
+    <ul role="list" class="mobileMenu">
+      <li><a href="javascript:void(0);" onclick="closeMenu()" class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a></li>
+      {% for link in collections.pages %}
+      <li>
+        <a
+          {% if currentUrl === link.url %}aria-current="page"{% endif %}
+          class="mobileMenuButton"
+          href="{{ link.url }}">
+            {{ link.data.buttonText }}
+        </a>
+      </li>
+      {% if link.data.phoneNumber %} <li><a class="mobilePhoneNumber" id="phoneNumber"href="tel:{{link.data.phoneNumber}}">{{link.data.phoneNumber}}</a></li> {% endif %}
+      {%- endfor %}
+    </ul>
     <ul role="list" class="tdbc-sitenav__navlist tdbc-list-unstyled">
       {% for link in collections.pages %}
       <li>
@@ -22,4 +40,6 @@
       {% if link.data.phoneNumber %} <li><a class="tdbc-button" id="phoneNumber"href="tel:{{link.data.phoneNumber}}">{{link.data.phoneNumber}}</a></li> {% endif %}
       {%- endfor %}
     </ul>
+    <a href="javascript:void(0);" onclick="openMenu()" class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a>
+
 </nav>

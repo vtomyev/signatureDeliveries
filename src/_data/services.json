@@ -7,7 +7,8 @@
             "White glove service",
             "Lift-gate",
             "Final mile deliveries",
-            "Two man deliveries"
+            "Two man deliveries",
+            "TSA Service"
           ],
         "name": "Our Services"
     },
@@ -15,6 +16,7 @@
     "vehicles":{
         "vehicleList":[
             "Car",
+            "Cargo van",
             "Sprinter",
             "Box truck"
           ],
